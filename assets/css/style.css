@@ -12,7 +12,10 @@ body {
 .user-block,
 .main-logo,
 .advantage,
-.index-content {
+.index-content,
+.footer-adress,
+.footer-social,
+.footer-copyright {
 	border: 2px solid blue;
 
 } 
@@ -40,16 +43,25 @@ body {
 	margin: 0 auto;
 }
 
+.main-header {
+	margin-bottom: 60px;
+}
+
 .main-navigator {
 	width: 780px;
+	float: left;
 }
 
 .user-block {
 	width: 140px;
+	float: right;
 }
 
 .main-logo {
-	text-align: center;
+	width: 368px;
+	height: 204px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 25px;
 }
 
@@ -58,6 +70,7 @@ body {
 	margin-right: 20px;
 	width: 300px;
 	float: left;
+	text-align: center;
 }
 
 .advantage-element:last-child {
@@ -66,14 +79,40 @@ body {
 
 .index-content {
 	min-height: 430px;
+	width: 100%;
 }
 
 .index-content-left {
 	width: 380px;
 	float: left;
+	padding-top: 50px;
+	padding-bottom: 55px;
+	padding-right: 80px;
 }
 
 .index-content-right {
 	width: 300px;
 	float: right;
+	padding-top: 50px;
+	padding-bottom: 55px;
+	padding-right: 80px;
+}
+
+.footer-adress {
+	width: 320px;
+	margin-right: 60px;
+	float: left;
+}
+
+.footer-social {
+	width: 180px;
+	margin-right: 60px;
+	float: left;
+	text-align: center;
+}
+
+.footer-copyright {
+	width: 140px;
+	float: right;
+	text-align: center;
 }
