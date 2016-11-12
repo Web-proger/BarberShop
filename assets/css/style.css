@@ -1,0 +1,79 @@
+/* для тестирования */
+body {
+	background: black;
+	color: white;
+}
+/*Главные блоки*/
+.container { 
+	border: 3px solid red;
+}
+/*второстепенные блоки*/
+.main-navigator,
+.user-block,
+.main-logo,
+.advantage,
+.index-content {
+	border: 2px solid blue;
+
+} 
+/*вложенные во второстепенные блоки*/
+.advantage-element,
+.index-content-left,
+.index-content-right { 
+	border: 1px solid yellow;
+
+}
+
+/*-------------------*/
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*Сетка*/
+.container {
+	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+
+.main-navigator {
+	width: 780px;
+}
+
+.user-block {
+	width: 140px;
+}
+
+.main-logo {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.advantage-element {
+	margin-bottom: 80px;
+	margin-right: 20px;
+	width: 300px;
+	float: left;
+}
+
+.advantage-element:last-child {
+		margin-right: 0;
+}
+
+.index-content {
+	min-height: 430px;
+}
+
+.index-content-left {
+	width: 380px;
+	float: left;
+}
+
+.index-content-right {
+	width: 300px;
+	float: right;
+}
