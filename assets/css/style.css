@@ -4,7 +4,8 @@ body {
 	color: white;
 }
 /*Главные блоки*/
-.container { 
+.container,
+.main-footer { 
 	border: 3px solid red;
 }
 /*второстепенные блоки*/
@@ -15,14 +16,17 @@ body {
 .index-content,
 .footer-adress,
 .footer-social,
-.footer-copyright {
+.footer-copyright,
+.content-navigator {
 	border: 2px solid blue;
 
 } 
 /*вложенные во второстепенные блоки*/
 .advantage-element,
 .index-content-left,
-.index-content-right { 
+.index-content-right,
+.item-gallery,
+.description-item { 
 	border: 1px solid yellow;
 
 }
@@ -35,7 +39,8 @@ body {
 }
 
 
-/*Сетка*/
+/*------Сетка-------------*/
+/*----Общее------*/
 .container {
 	width: 940px;
 	padding-left: 10px;
@@ -57,6 +62,32 @@ body {
 	float: right;
 }
 
+.main-footer {
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+} 
+
+.footer-adress {
+	width: 320px;
+	margin-right: 60px;
+	float: left;
+}
+
+.footer-social {
+	width: 180px;
+	margin-right: 60px;
+	float: left;
+	text-align: center;
+}
+
+.footer-copyright {
+	width: 140px;
+	float: right;
+	text-align: center;
+}
+
+/*---index.html---*/
 .main-logo {
 	width: 368px;
 	height: 204px;
@@ -94,28 +125,18 @@ body {
 	float: right;
 }
 
-.main-footer {
-	margin-top: 65px;
-	padding-top: 60px;
-	padding-bottom: 40px;
-} 
+/*---item.html---*/
+.content-navigator {
+	margin-bottom: 55px;
+}
 
-.footer-adress {
-	width: 320px;
-	margin-right: 60px;
+.item-gallery {
+	width: 460px;
 	float: left;
 }
 
-.footer-social {
-	width: 180px;
-	margin-right: 60px;
-	float: left;
-	text-align: center;
-}
-
-.footer-copyright {
-	width: 140px;
+.description-item {
+	width: 390px;
 	float: right;
-	text-align: center;
 }
 
