@@ -1,6 +1,6 @@
 /* для тестирования */
 body {
-	background: black;
+	background: gray;
 	color: white;
 }
 /*Главные блоки*/
@@ -28,7 +28,7 @@ body {
 }
 
 /*-------------------*/
-.clearfix {
+.clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -41,7 +41,7 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0 auto;
-}
+} 
 
 .main-header {
 	margin-bottom: 60px;
@@ -65,8 +65,10 @@ body {
 	margin-bottom: 25px;
 }
 
-.advantage-element {
+.advantage {
 	margin-bottom: 80px;
+}
+.advantage-element {
 	margin-right: 20px;
 	width: 300px;
 	float: left;
@@ -74,29 +76,29 @@ body {
 }
 
 .advantage-element:last-child {
-		margin-right: 0;
+	margin-right: 0;
 }
 
 .index-content {
-	min-height: 430px;
-	width: 100%;
+	margin-bottom: 35px;
+	padding: 50px 80px;
 }
 
 .index-content-left {
 	width: 380px;
 	float: left;
-	padding-top: 50px;
-	padding-bottom: 55px;
-	padding-right: 80px;
 }
 
 .index-content-right {
 	width: 300px;
 	float: right;
-	padding-top: 50px;
-	padding-bottom: 55px;
-	padding-right: 80px;
 }
+
+.main-footer {
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+} 
 
 .footer-adress {
 	width: 320px;
@@ -116,3 +118,4 @@ body {
 	float: right;
 	text-align: center;
 }
+
