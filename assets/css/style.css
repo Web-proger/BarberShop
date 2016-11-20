@@ -26,7 +26,9 @@ body {
 .index-content-left,
 .index-content-right,
 .item-gallery,
-.description-item { 
+.item-description,
+.price-content-left,
+.price-content-right { 
 	border: 1px solid yellow;
 
 }
@@ -135,8 +137,61 @@ body {
 	float: left;
 }
 
-.description-item {
+.item-description {
 	width: 390px;
 	float: right;
 }
 
+.item-presence {
+	float: left;
+}
+
+.item-code {
+	float: right;
+}
+/*---price.html---*/
+.price-content-left {
+	float: left;
+	width: 400px;
+}
+
+.price-content-right {
+	float: right;
+	width: 460px;
+}
+
+/*---shop.html---*/
+.shop-sorting-item {
+	float: left;
+	width: 220px;
+}
+
+.shop-item {
+	float: right;
+	width: 700px;
+}
+
+
+
+
+
+
+.shop-item-description figure {
+	margin: 0;
+}
+
+.shop-item-description {
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+
+.shop-item-description:nth-child(3n) {
+	margin-right: 0;
+}
+
+.shop-btn-page {
+	padding-top: 45px;
+}
