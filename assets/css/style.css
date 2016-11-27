@@ -1,18 +1,15 @@
 /* для тестирования */
-body {
-	background: gray;
-	color: white;
-}
+
 /*Главные блоки*/
 .container,
 .main-footer { 
 	border: 3px solid red;
 }
 /*второстепенные блоки*/
-.main-navigator,
+/*.main-navigator,
 .user-block,
-.main-logo,
-.advantage,
+.index-logo,
+.features,*/
 .index-content,
 .footer-adress,
 .footer-social,
@@ -22,7 +19,7 @@ body {
 
 } 
 /*вложенные во второстепенные блоки*/
-.advantage-element,
+/*.features-item,*/
 .index-content-left,
 .index-content-right,
 .item-gallery,
@@ -43,6 +40,19 @@ body {
 
 /*------Сетка-------------*/
 /*----Общее------*/
+body {
+	min-width: 960px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: #000000 url("../img/body-bg.jpg") no-repeat center top;
+
+}
+
 .container {
 	width: 940px;
 	padding-left: 10px;
@@ -52,6 +62,8 @@ body {
 
 .main-header {
 	margin-bottom: 60px;
+	background: #000000;
+	color: #ffffff;
 }
 
 .main-navigator {
@@ -59,9 +71,65 @@ body {
 	float: left;
 }
 
+.main-navigator a {
+	display: block;
+	padding: 25px 20px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-navigator a:hover {
+	background: #242424;
+}
+
+.main-navigator ul {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+
+.main-navigator li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
+}
+
 .user-block {
-	width: 140px;
+	max-width: 140px;
 	float: right;
+}
+
+.login {
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 25px 20px;
+	padding-left: 50px;
+	vertical-align: top;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.login:hover {
+	background: #242424;
+}
+
+.login::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 20px;
+	width: 18px;
+	height: 18px; 
+	background: transparent url("../img/icon-login.png") no-repeat;
+	opacity: 0.3;
+}
+
+.login:hover::before {
+	opacity: 1;
 }
 
 .main-footer {
@@ -90,31 +158,71 @@ body {
 }
 
 /*---index.html---*/
-.main-logo {
+.index-logo {
 	width: 368px;
 	height: 204px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	margin-bottom: 25px;
 }
 
-.advantage {
+.index-logo img {
+	width: 368px;
+	height: 204px;
+}
+
+.features {
 	margin-bottom: 80px;
 }
-.advantage-element {
+.features-item {
 	margin-right: 20px;
 	width: 300px;
 	float: left;
 	text-align: center;
 }
 
-.advantage-element:last-child {
+.features-item:last-child {
 	margin-right: 0;
+}
+
+
+.features-name {
+	position: relative;
+	display: block;
+	font-size: 30px;
+	line-height: 42px;
+	padding-bottom: 35px;
+	margin-bottom: 30px;
+}
+
+.features-name::after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10px;
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	transform: rotate(45deg);
+}
+
+.features-item p{
+	margin: 10px;
+	margin-bottom: 0;
 }
 
 .index-content {
 	margin-bottom: 35px;
 	padding: 50px 80px;
+	color: #000000;
+	background: url("../img/index-content-shadow.png") no-repeat center,
+	#345671 url("../img/pattern-white.jpg");
+}
+
+.index-content-title {
+	font-size: 30px;
+	line-height: 42px;
 }
 
 .index-content-left {
