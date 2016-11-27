@@ -56,9 +56,9 @@
 			</div>
 		</div>
 		<div class="index-content clearfix">
-			<section class="news index-content-left">
+			<section class="index-content-left">
 				<h2 class="index-content-title">новости</h2>
-				<ul>
+				<ul class="news-preview">
 					<li>
 						<p>нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
 						<time datetime="2016-09-25">25 сентября</time>
@@ -73,26 +73,26 @@
 			<section class="gallery index-content-right">
 				<h2 class="index-content-title">фотогалерея</h2>
 				<figure class="gallery-content">
-					<img src="assets/img/gallery_img1.jpg" width="250" alt="наш интерьер">
+					<img src="assets/img/gallery_img1.jpg" alt="наш интерьер">
 				</figure>
-				<button class="btn gallery-prev">назад</button>
+				<button class="btn gallery-prev" disabled>назад</button>
 				<button class="btn gallery-next">вперёд</button>	
 			</section>	
 		</div>
 		<div class="index-content clearfix">
 			<section class="contact index-content-left">
 				<h2 class="index-content-title">контактная информация</h2>
-				<address>
+				<p>
 					барбершоп «бородинский»<br>
 					адресс: г. санкт-петербург, б. конюшенная, д 19/8<br>
 					телефон: +7 (495) 666-02-66
-				</address>
-				<p>время работы</p>
-				<p>пн - пт: c 
+				</p>
+				<p>время работы <br>
+				пн - пт: c 
 					<time datetime="10:00">10:00</time> до
 					<time datetime="22:00">22:00</time>
-				</p>
-				<p>сб - вс: c 
+					<br>
+				сб - вс: c 
 					<time datetime="10:00">10:00</time> до
 					<time datetime="19:00">19:00</time>
 				</p>
@@ -102,11 +102,11 @@
 			<section class="visit index-content-right">
 				<h2 class="index-content-title">записаться</h2>
 				<p>укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-				<form>
-					<input type="date" name="date">
-					<input type="time" name="time" value="10:00">
+				<form class="appointment-form">
+					<input type="text" name="date" value="" placeholder="Дата">
+					<input type="text" name="time" value="" placeholder="Время">
 					<input type="text" name="first_name" value="" placeholder="Имя">
-					<input type="tel" name="tel" value="" placeholder="Телефон"><br>
+					<input type="text" name="tel" value="" placeholder="Телефон"><br>
 					<button class="btn" type="submit">отправить</button>
 				</form>
 			</section>	
@@ -114,7 +114,7 @@
 	</main>
 	<footer class="main-footer">
 		<div class="container clearfix">
-			<div class="footer-adress">
+			<div class="footer-contacts">
 				<p>Барбершоп «бородинский»<br>
 				адресс: г. санкт-петербург, б. конюшенная, д 19/8<br>
 				<a href="#">как найти нас</a><br>
@@ -123,9 +123,9 @@
 			</div>
 			<div class="footer-social">
 				<p>давайте дружить</p>
-				<a class="sicial-btn sicial-btn-vk" href="#">VK</a>
-				<a class="sicial-btn sicial-btn-fb"  href="#">FB</a>
-				<a class="sicial-btn sicial-btn-inst"  href="#">INST</a>
+				<a class="social-btn sicial-btn-vk" href="#">VK</a>
+				<a class="social-btn sicial-btn-fb"  href="#">FB</a>
+				<a class="social-btn sicial-btn-inst"  href="#">INST</a>
 			</div>
 			<div class="footer-copyright">
 				<p>разработано</p>
