@@ -408,6 +408,45 @@ body {
 }
 
 /*---item.html---*/
+.main-item {
+	color: #000000;
+	background: #345671 url("../img/pattern-white.jpg");
+}
+
+.breadcrumbs ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	padding-right: 40px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.breadcrumbs li::before {
+	position: absolute;
+	top: 6px;
+	right: 17px;
+	content: "";
+	background: transparent url("../img/rhomb.png") no-repeat;
+	width: 11px;
+	height: 12px;
+} 
+
+.breadcrumbs li:last-child::before {
+	position: absolute;
+	content: "";
+	background: transparent url("../img/rhomb.png") no-repeat;
+	width: 0;
+	height: 0;
+} 
+
 .content-navigator {
 	margin-bottom: 55px;
 }
