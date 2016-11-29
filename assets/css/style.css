@@ -30,6 +30,7 @@
 
 }
 
+
 /*-------------------*/
 .clearfix::after {
 	content: "";
@@ -42,7 +43,6 @@
 /*----Общее------*/
 body {
 	min-width: 960px;
-
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
@@ -147,6 +147,10 @@ body {
 	float: left;
 }
 
+.footer-contacts p {
+	margin: 0;
+}
+
 .footer-contacts a {
 	color: #ffffff;
 }
@@ -163,6 +167,7 @@ body {
 }
 
 .footer-social p {
+	margin: 0;
 	margin-bottom: 15px;
 }
 
@@ -302,6 +307,10 @@ body {
 	#345671 url("../img/pattern-white.jpg");
 }
 
+.index-content:last-child {
+	margin-bottom: 0;
+}
+
 .index-content-title {
 	margin: 0;
 	margin-bottom: 25px; 
@@ -406,11 +415,23 @@ body {
 	clear: both;
 	width: 100%;
 }
+/******второе  меню*****/
+.navigator-logo a {
+	padding-bottom: 17px;
+}
+
 
 /*---item.html---*/
 .main-item {
 	color: #000000;
 	background: #345671 url("../img/pattern-white.jpg");
+}
+
+.content-navigator h2 {
+	font-size: 33px;
+	line-height: 43px;
+	padding-top: 20px;
+	margin-bottom: 15px;
 }
 
 .breadcrumbs ul {
@@ -446,6 +467,12 @@ body {
 	width: 0;
 	height: 0;
 } 
+
+.breadcrumbs a {
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+}
 
 .content-navigator {
 	margin-bottom: 55px;
