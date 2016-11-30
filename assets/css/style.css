@@ -1,35 +1,34 @@
 /* для тестирования */
 
-/*Главные блоки*/
+/*Главные блоки
 .container,
 .main-footer { 
 	border: 3px solid red;
-}
+}*/
+
 /*второстепенные блоки*/
 /*.main-navigator,
 .user-block,
 .index-logo,
 .features,
-.index-content,*/
+.index-content,
+.content-navigator 
 .footer-contacts,
 .footer-social,
-.footer-copyright,
-.content-navigator {
+.footer-copyright {
 	border: 2px solid blue;
 
-} 
+} */
 /*вложенные во второстепенные блоки*/
 /*.features-item,
 .index-content-left,
-.index-content-right,*/
+.index-content-right,
 .item-gallery,
 .item-description,
 .price-content-left,
 .price-content-right { 
 	border: 1px solid yellow;
-
-}
-
+}*/
 
 /*-------------------*/
 .clearfix::after {
@@ -53,6 +52,10 @@ body {
 
 }
 
+.second-bg {
+	background: #345671 url("../img/pattern-white.jpg") center top;
+}
+
 .container {
 	width: 940px;
 	padding-left: 10px;
@@ -64,6 +67,12 @@ body {
 	margin-bottom: 60px;
 	background: #000000;
 	color: #ffffff;
+}
+
+.secondary-main-header {
+	margin-bottom: 0;
+	background: #000000;
+	color: #ffffff;	
 }
 
 .main-navigator {
@@ -424,7 +433,6 @@ body {
 /*---item.html---*/
 .main-item {
 	color: #000000;
-	background: #345671 url("../img/pattern-white.jpg");
 }
 
 .content-navigator h2 {
@@ -475,7 +483,7 @@ body {
 }
 
 .content-navigator {
-	margin-bottom: 55px;
+	margin-bottom: 40px;
 }
 
 .item-gallery {
@@ -494,7 +502,59 @@ body {
 
 .item-code {
 	float: right;
+	margin-right: 10px;
+	color: #bcbbbb;
 }
+
+.description-text {
+	margin-bottom: 35px;	
+}
+
+.item-price-block {
+	margin-bottom: 60px;
+}
+
+.price {
+	display: inline-block;
+	padding: 10px 33px;
+	background-color: #e5e5e5;
+	text-align: center;
+	vertical-align: top;	
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+
+.item-composition h3 {
+	margin-bottom: 25px;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.item-kit {
+	list-style: none;
+	padding-left: 0;
+}
+
+.item-kit li {
+	position: relative;
+	padding-left: 20px;
+}
+
+.item-kit li::before {
+	position: absolute;
+
+	top: 6px;
+	left: 0px;
+	content: "";
+	background: transparent url("../img/rhomb.png") no-repeat;
+	width: 11px;
+	height: 12px;
+}
+
+
+
 /*---price.html---*/
 .price-content-left {
 	float: left;
@@ -516,6 +576,8 @@ body {
 	float: right;
 	width: 700px;
 }
+
+
 
 
 
