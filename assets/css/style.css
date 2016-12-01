@@ -436,8 +436,8 @@ body {
 }
 
 .content-navigator h2 {
-	font-size: 33px;
-	line-height: 43px;
+	font-size: 30px;
+	line-height: 40px;
 	padding-top: 20px;
 	margin-bottom: 15px;
 }
@@ -544,7 +544,6 @@ body {
 
 .item-kit li::before {
 	position: absolute;
-
 	top: 6px;
 	left: 0px;
 	content: "";
@@ -564,6 +563,83 @@ body {
 .price-content-right {
 	float: right;
 	width: 460px;
+}
+
+h1.price-caption {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 940px;
+	font-size: 48px;
+	line-height: 62px;
+	margin-top: 0;
+}
+
+.price-content-left h3,
+.price-content-right h3 {
+	display: inline-block;
+	font-size: 24px;
+	line-height: 32px;
+	width: 240px;
+}
+
+h1.price-caption::before {
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: 0px;
+	height: 2px;
+	width: 160px;
+	background: url("../img/decor-line.jpg") no-repeat;
+}
+
+h1.price-caption::after {
+	position: absolute;
+	content: "";
+	top: 30px;
+	right: 0px;
+	height: 2px;
+	width: 160px;
+	background: url("../img/decor-line.jpg") no-repeat;
+}
+
+.list-hygiene {
+	list-style: none;
+	padding-left: 0;
+}
+
+.list-hygiene li {
+	position: relative;
+	list-style: none;
+	width: 150px;
+	margin-left: 0;
+	padding-left: 20px;
+}
+
+.list-hygiene li::before {
+	position: absolute;
+	top: 6px;
+	left: 0px;
+	content: "";
+	background: transparent url("../img/rhomb.png") no-repeat;
+	width: 11px;
+	height: 12px;
+}
+
+.price-table {
+	border-collapse: collapse;
+	width: 100%
+}
+
+.price-table td {
+	padding: 6px 20px;
+	width: 50%;
+	border: 2px solid black;
+}
+
+.price-table tr td:last-child {
+	text-align: center;
 }
 
 /*---shop.html---*/
