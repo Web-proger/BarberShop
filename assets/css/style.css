@@ -747,10 +747,11 @@ ul.list-hygiene {
 	float: right;
 	width: 700px;
 	padding-top: 12px;
+	margin-bottom: 50px;
 }
 
 .wrapper-shop-item {
-	margin-bottom: 25px;
+	margin-bottom: 26px;
 }
 
 
@@ -782,7 +783,10 @@ ul.list-hygiene {
 }
 
 .shop-btn-page .btn {
-	padding: 8px 15px;
+	padding: 0;
+	margin-right: 4px;
+	width: 43px;
+	height: 43px;
 }
 
 .category, .title {
