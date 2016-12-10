@@ -95,6 +95,7 @@ body {
 }
 
 .main-navigator ul {
+	float: left;
 	margin: 0;
 	padding: 0;
 	font-size: 0;
@@ -431,8 +432,18 @@ body {
 	width: 100%;
 }
 /******второе  меню*****/
+.navigator-logo {
+	float:left;
+	height: 24px;
+}
+
 .navigator-logo a {
-	padding-bottom: 17px;
+	padding-top: 23px;
+	padding-bottom: 16px;
+}
+
+.navigator-logo a:hover {
+	background: none;
 }
 
 
