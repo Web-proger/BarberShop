@@ -446,6 +446,27 @@ body {
 	background: none;
 }
 
+.active {
+	position: relative;
+}
+
+.active strong {
+	display: block;
+	padding: 25px 20px;
+}
+
+.active::after {
+	position: absolute;
+	content: "";
+	height: 5px;
+	bottom: 0;
+	left: 20px;
+	right: 20px;
+	background: #ffffff;
+}
+
+
+
 
 /*---item.html---*/
 .content-navigator h2 {
