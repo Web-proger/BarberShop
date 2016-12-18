@@ -847,14 +847,16 @@ ul.list-hygiene {
 
 /********popup********/
 .modal-content {
+	display: none;
 	position: fixed;
+	z-index: 20;
 	top: 120px;
 	left: 50%;
 	width: 460px;
 	height: 385px;
 	margin-left: -230px;
 	background: #345671 url("../img/pattern-white.jpg");
-	box-shadow: 0 30px 50px rgba(0 0 0 0.7);
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-content-close {
@@ -863,11 +865,31 @@ ul.list-hygiene {
 	right: -34px;
 	width: 22px;
 	height: 22px;
-
+	background-color: transparent;
 	font-size: 0;
 	border: 0;
 	outline: 0; 
 	cursor: pointer;
+}
+
+.modal-content-close:after,
+.modal-content-close:before {
+	position: absolute;
+	content: "";
+	top: 10px;
+	left: 2px;
+	width: 19px;
+	height: 3px;
+	background-color: #d0d0d0;
+	border-radius: 1px;
+}
+
+.modal-content-close:after {
+	transform: rotate(45deg);
+}
+
+.modal-content-close:before {
+	transform: rotate(-45deg);
 }
 
 .login-form {
@@ -893,23 +915,36 @@ ul.list-hygiene {
 .login-form > input {
 	margin-bottom: 9px;
 	padding: 15px;
-	width: 268px;
+	padding-right: 40px;
+	width: 243px;
 	border: 2px solid #000000;
+}
+
+.login-form input:hover {
+	border-color: #663d15;
+}
+
+input.icon-user {
+	background: url(../img/icon-user.png) no-repeat 95% 50%;
+}
+
+input.icon-password {
+	background: url(../img/icon-password.png) no-repeat 95% 50%;
 }
 
 .remember-restore-pass {
 	margin-bottom: 18px;
 }
 
-.remember-pass {
+.login-checkbox {
 	float: left;
 }
 
-.restore-pass {
+.restore {
 	float: right;
 }
 
-.restore-pass a {
+.restore a {
 	color: #000000;
 }
 
@@ -917,22 +952,80 @@ ul.list-hygiene {
 	width: 100%;
 }
 
-.modal-content-close:after,
-.modal-content-close:before {
+.login-checkbox label {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.login-checkbox label:hover,
+.login-form a:hover {
+	color: #663d15;
+}
+
+.login-checkbox input {
+	display: none;
+	padding-left: 30px;
+}
+
+.login-checkbox span {
 	position: absolute;
-	content: "";
-	top: 10px;
-	left: 2px;
-	width: 19px;
-	height: 3px;
-	background-color: #d0d0d0;
-	border-radius: 1px;
+	top: -3px;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000000;
 }
 
-.modal-content-close:after {
+.login-checkbox input[type="checkbox"]:checked
+ + .checkbox-indicator::after,
+ .login-checkbox input[type="checkbox"]:checked
+ + .checkbox-indicator::before {
+ 	position: absolute;
+ 	content: "";
+ 	top: 8px;
+ 	left: 1px;
+ 	width: 15px;
+ 	height: 2px;
+ 	background-color: #000000;
+ }
+
+ .login-checkbox input[type="checkbox"]:checked
+ + .checkbox-indicator::after {
 	transform: rotate(45deg);
+ }
+
+  .login-checkbox input[type="checkbox"]:checked
+ + .checkbox-indicator::before {
+	transform: rotate(-45deg);
+ }
+
+/*****map*****/
+.modal-content-map {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	content: "";
+	width: 766px;
+	height: 560px;
+	margin-left: -383px;
+	margin-top: -280px;
+	background: #e9e5dc url("../img/map.png") no-repeat;
+	border: 7px solid white;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal-content-close:before {
-	transform: rotate(-45deg);
+.modal-layout {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 }
+
