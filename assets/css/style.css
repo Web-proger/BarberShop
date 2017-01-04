@@ -909,6 +909,11 @@ ul.list-hygiene {
 	animation: bounce 0.6s;
 }
 
+.modal-form-error {
+	animation: error 0.6s;
+}
+
+
 .login-form {
 	padding: 50px 80px;
 	font-size: 14px;
@@ -1057,9 +1062,7 @@ input.icon-password {
 	position: relative;
 	padding-left: 45px;
 	cursor: pointer;
-
 }
-
 
 .shop-sorting-form label:hover {
 	color: #663d15;
@@ -1137,5 +1140,15 @@ input.icon-password {
 	0% {transform: translateX(-2000px);}
 	70% {transform: translateX(30px);}
 	90% {transform: translateX(-10px);}
+	100% {transform: translateX(0px);}
+}
+
+
+@keyframes error {
+	0% {transform: translateX(0);}
+	20% {transform: translateX(30px);}
+	40% {transform: translateX(-30px);}
+	60% {transform: translateX(30px);}
+	80% {transform: translateX(-30px);}
 	100% {transform: translateX(0px);}
 }
