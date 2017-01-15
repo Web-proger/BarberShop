@@ -10,10 +10,12 @@ var mapButton = document.querySelector(".js-open-map");
 var mapButtonFooter = document.querySelector(".js-footer-open-map");
 var map = document.querySelector(".modal-content-map");
 var mapClose = map.querySelector(".modal-content-close");
+var layout = document.querySelector(".modal-layout"); // Полупрозрачный слой для Попапа
 
 //Открытие формы входа
 userBlock.addEventListener("click", function(event) {
 	event.preventDefault();
+	layout.classList.add("modal-layout-visible");
 	popup.classList.add("modal-content-show");
 	console.log("Открываем Popup");
 	if (storage) {
@@ -26,6 +28,7 @@ userBlock.addEventListener("click", function(event) {
 
 // Закрытие формы входа по крестику
 popupClose.addEventListener("click", function(event) {
+	layout.classList.remove("modal-layout-visible");
 	popup.classList.remove("modal-content-show");
 	popup.classList.remove("modal-form-error");
 	console.log("Закрываем Popup по крестику");
@@ -53,6 +56,7 @@ form.addEventListener("submit", function(event) {
 // Закрытие формы входа по escape
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
+		layout.classList.remove("modal-layout-visible");
 		if (popup.classList.contains("modal-content-show")) {
 			popup.classList.remove("modal-content-show");
 			console.log("Закрываем Popup через Escape");
@@ -68,9 +72,24 @@ window.addEventListener("keydown", function(event) {
 	}
 });
 
+// Закрыте модальных окон по клику около них.
+layout.addEventListener("click", function(event) {
+	event.preventDefault();
+	layout.classList.remove("modal-layout-visible");
+	if (popup.classList.contains("modal-content-show")) {
+			popup.classList.remove("modal-content-show");
+			console.log("Закрываем Popup через layout");
+		} 
+		if (map.classList.contains("open-map")) {
+			map.classList.remove("open-map");
+			console.log("Закрываем Map через layout");
+		}
+})
+
 // Открытие карты
 mapButtonFooter.addEventListener("click", function(event) {
 	event.preventDefault();
+	layout.classList.add("modal-layout-visible");
 	map.classList.add("open-map");
 	console.log("Открываем карту");
 });
@@ -78,6 +97,7 @@ mapButtonFooter.addEventListener("click", function(event) {
 // Закрытие карты
 mapClose.addEventListener("click", function(event) {
 	event.preventDefault();
+	layout.classList.remove("modal-layout-visible");
 	map.classList.remove("open-map");
 	console.log("Закрываем карту по крестику");
 });
