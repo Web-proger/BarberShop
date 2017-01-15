@@ -1,36 +1,4 @@
-/* для тестирования */
-
-/*Главные блоки
-.container,
-.main-footer { 
-	border: 3px solid red;
-}*/
-
-/*второстепенные блоки*/
-/*.main-navigator,
-.user-block,
-.index-logo,
-.features,
-.index-content,
-.content-navigator 
-.footer-contacts,
-.footer-social,
-.footer-copyright {
-	border: 2px solid blue;
-
-} */
-/*вложенные во второстепенные блоки*/
-/*.features-item,
-.index-content-left,
-.index-content-right,
-.item-gallery,
-.item-description,
-.price-content-left,
-.price-content-right { 
-	border: 1px solid yellow;
-}*/
-
-/*-------------------*/
+/*-----Clearfix------*/
 .clearfix::after {
 	content: "";
 	display: table;
